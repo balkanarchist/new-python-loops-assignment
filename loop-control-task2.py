@@ -5,19 +5,15 @@
 
 import time
 
-def print_current_time():
-    while True:
-        current_time = time.strftime("%H:%M:%S")  # Apparently, this will get you the current time
-        print(f"Current time: {current_time}")
+while True:
+    current_time = time.strftime("%H:%M:%S")  # Apparently, this will get you the current time
+    print(f"Current time: {current_time}")
 
-        if current_time == "11:13:00":
-            print("Target time reached. Exiting the loop.")
-            break
+    if current_time == "11:13:00":
+        print("Target time reached. Exiting the loop.")
+        break
 
-        time.sleep(2) # Used to slow down infinite output to only once every two seconds - cool hack
-
-# Example usage:
-print_current_time()
+    time.sleep(2) # Used to slow down infinite output to only once every two seconds - cool hack
 
 '''
 The break statement is used to stop infinite loops. Note that it should be written
