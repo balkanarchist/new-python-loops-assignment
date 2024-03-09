@@ -8,8 +8,6 @@ japanese_foods = ["unadon", "yakitori", "fugu tempura", "natto", "sushi", "gyoza
 
 random_item = random.choice(japanese_foods)
 
-#guess = input("Guess the Japanese food: ")
-
 while True:
     guess = input("Guess the Japanese food (or 'quit' to exit): ")
     if guess == random_item:
